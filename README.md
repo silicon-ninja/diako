@@ -10,7 +10,7 @@
 This is an attempt to make a git profile switcher as we all know that it is freaking irritating to have to type in the git profile and handling multiple ssh keys every time we want to switch profiles. right ? so here we go.
 
 ```csharp
-"program status":" just started"
+program_status:" just started"
 ```
 
 ## Features to be added :

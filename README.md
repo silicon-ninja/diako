@@ -11,7 +11,7 @@
 ## Features to be added :
 
 - [x] Getting Started
-- [in Progress ] Making the CLI Menu's
+- [ ] Making the CLI Menu's (in Progress)
 - [ ] Working with Json files
 - [ ] Implementing the CLI Menu's with Json files
 - [ ] Implementing location based git profiles
@@ -20,6 +20,7 @@
 - [ ] Deploying it on Brew, AUR and Winget (or whatever)
 - [ ] Keeping it up to date
 
+```Timeline```: ```1.5 Months``` (if everthing goes well)
 
 ----
 © 2022 Silicon Ninja

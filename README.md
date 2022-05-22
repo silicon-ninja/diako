@@ -20,8 +20,12 @@
 - [ ] Deploying it on Brew, AUR and Winget (or whatever)
 - [ ] Keeping it up to date
 
-```Timeline```: ```1.5 Months``` (if everthing goes well)
 
-You are welcome to work on this. 
+
+```rust
+println!({},"Timeline: 1.5 Months (if everthing goes well)"); 
+println!({},"You are welcome to work on this."); 
+```
+
 ----
 © 2022 Silicon Ninja

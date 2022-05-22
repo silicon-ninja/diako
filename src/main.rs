@@ -13,6 +13,7 @@ fn main() {
     println!("{}", "3. Bitbucket".green());
     println!("{}", "4. Exit".green());
     println!("");
+    // println!("{}",client.printpos())    
     // println!(
     //     "{}, {}, {}, {}, {}, {}, and some normal text.",
     //     format!("Bold").bold(),

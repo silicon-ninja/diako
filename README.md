@@ -13,7 +13,7 @@ This is an attempt to make a git profile switcher as we all know that it is frea
 program_status:"just started"
 ```
 
-## Features to be added :
+## TO-DO:
 
 - [x] Getting Started
 - [ ] Making the CLI Menu's (in Progress)

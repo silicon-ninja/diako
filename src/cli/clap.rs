@@ -22,6 +22,9 @@ pub enum DiakoSubArgs {
     
     /// To switch the existing remote url of the project to a new one.
     Switch(SwitchArgs),
+
+    /// To add a new git client.
+    Add(AddArgs),
 }
 
 // ---------- Configure ----------
@@ -43,3 +46,9 @@ pub struct InitArgs {}
 
 #[derive(Debug, Args)]
 pub struct SwitchArgs {}
+
+
+// ---------- Add ----------
+
+#[derive(Debug, Args)]
+pub struct AddArgs {}

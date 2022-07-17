@@ -2,10 +2,7 @@
 name = "diako"
 version = "0.1.0"
 edition = "2021"
-
-
-
-author = "2022  Srikanth Kandarp"
+author = "2022 © Srikanth Kandarp"
 homepage = "https://github.com/silicon-ninja/diako"
 repository = "https://github.com/silicon-ninja/diako"
 documentation = "https://github.com/silicon-ninja/diako/docs"

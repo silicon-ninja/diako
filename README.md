@@ -1,6 +1,5 @@
 # Diako
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-rust.svg)](https://forthebadge.com)
 
 ```
 █▀▄ █ ▄▀█ █▄▀ █▀█ .______________________________________________________|_._._._._._._._._._.

@@ -19,6 +19,8 @@ var rootCmd = &cobra.Command{
 █▄▀ █ █▀█ █░█ █▄█  \_____________________________________________________|_#_#_#_#_#_#_#_#_#_|
 																		    l
 Diako is a simple, yet powerful, and easy to use, command line tool for managing your git.
+
+Built with ❤️  by Srikanth Kandarp from India.
 `,
 }
 
@@ -31,5 +33,5 @@ func Execute() {
 
 func init() {
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
-	rootCmd.AddCommand(issuesCmd)
+	rootCmd.AddCommand(issuesCmd, initCmd)
 }

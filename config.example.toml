@@ -1,0 +1,43 @@
+dont_touch_this_flag = true
+
+[[diako_config]]
+username = "oh-tarnished"
+provider = "GitHub"
+email = "srikanthkandarpa@machanirobotics.com"
+
+  [[diako_config.config]]
+  account_type = "work"
+
+    [diako_config.config.location]
+    type = "machani robotics"
+    longitude = ""
+    latitude = ""
+
+    [[diako_config.config."  config"]]
+    status = true
+    type = "ssh"
+
+      [diako_config.config."  config".ssh_path]
+      public_key = "~/.ssh/hello.pub"
+      private_key = "~/.ssh/hello"
+
+[[diako_config]]
+username = "silicon-ninja"
+provider = "GitHub"
+email = "srikanthkandar23@gmail.com"
+
+  [[diako_config.config]]
+  account_type = "personal"
+
+    [diako_config.config.location]
+    type = "home"
+    longitude = ""
+    latitude = ""
+
+    [[diako_config.config."  config"]]
+    status = true
+    type = "ssh"
+
+      [diako_config.config."  config".ssh_path]
+      public_key = "~/.ssh/hello.pub"
+      private_key = "~/.ssh/hello"

@@ -1,0 +1,55 @@
+FROM ubuntu@sha256:9d42d0e3e57bc067d10a75ee33bdd1a5298e95e5fc3c5d1fce98b455cb879249
+
+ARG USERNAME=diako
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
+ARG BAZELISK_VERSION=1.15.0
+ARG GO_VERSION=1.19.4
+ARG ARCH=amd64
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# setting timezone
+RUN ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+
+# installing base deps
+RUN apt update && \
+    apt install --no-install-recommends -y \
+    ca-certificates \
+    curl \
+    build-essential \
+    gcc \
+    mono-mcs \
+    git \
+    ssh \
+    sudo \
+    wget \
+    unzip
+
+# adding dev user
+RUN groupadd --gid $USER_GID $USERNAME \
+    && useradd --uid $USER_UID --gid $USER_GID -ms /bin/bash $USERNAME \
+    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME
+
+# installing go
+RUN curl -OL https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz
+RUN tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz
+RUN rm go${GO_VERSION}.linux-amd64.tar.gz
+RUN echo 'export PATH=$PATH:/usr/local/go/bin' >> /etc/profile
+RUN echo 'export GOPATH=$HOME/go' >> /etc/profile
+RUN echo 'export PATH=$PATH:$GOPATH/bin' >> /etc/profile
+RUN echo 'export GOROOT=/usr/local/go' >> /etc/profile
+
+# Installing bazel
+RUN wget https://github.com/bazelbuild/bazelisk/releases/download/v${BAZELISK_VERSION}/bazelisk-linux-${ARCH} -O /usr/local/bin/bazel && \
+    chmod +x /usr/local/bin/bazel
+
+RUN sudo curl -sSfL https://raw.githubusercontent.com/cosmtrek/air/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
+
+
+# verifying if air is installed
+RUN air -v
+
+# setting default user
+USER $USERNAME

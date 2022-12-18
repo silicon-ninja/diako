@@ -1,0 +1,11 @@
+{
+  "dockerFile": "../docker/Dockerfile.vscode.dev",
+  "runArgs": ["-v=example-build-cache:/home/diako"],
+  "extensions": [
+    "golang.go",
+    "766b.go-outliner",
+    "BazelBuild.vscode-bazel",
+    "StackBuild.bazel-stack-vscode",
+    "DevonDCarew.bazel-code"
+  ]
+}

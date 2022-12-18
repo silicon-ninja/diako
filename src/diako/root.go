@@ -1,6 +1,6 @@
-/*
-Copyright © 2022 Srikanth Kandarpa <srikanthkandarp@gmail.com>
-*/
+//  Created by silicon-ninja on 13/11/2022
+//  Copyright © 2022 Srikanth K. All rights reserved.
+
 package diako
 
 import (
@@ -17,10 +17,10 @@ var rootCmd = &cobra.Command{
 
 █▀▄ █ ▄▀█ █▄▀ █▀█ .______________________________________________________|_._._._._._._._._._.
 █▄▀ █ █▀█ █░█ █▄█  \_____________________________________________________|_#_#_#_#_#_#_#_#_#_|
-																		    l
+																		    
 Diako is a simple, yet powerful, and easy to use, command line tool for managing your git.
 
-Built with ❤️  by Srikanth Kandarp from India.
+Built with ❤️  by silicon-ninja, Bangalore, India.
 `,
 }
 

@@ -1,2 +1,3 @@
 dev:
-	go build . && ./diako
+	go build . && ./diako $(arg)
+

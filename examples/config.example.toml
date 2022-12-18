@@ -1,7 +1,8 @@
 dont_touch_this_flag = true
+google_map_api_key = "qoeqwijoeqwijoeqwjioeqwjioewqjioqwejiom,n"
 
 [[diako_config]]
-username = "oh-tarnished"
+username = "silicon-ninja"
 provider = "GitHub"
 email = "srikanthkandarpa@machanirobotics.com"
 
@@ -9,7 +10,7 @@ email = "srikanthkandarpa@machanirobotics.com"
   account_type = "work"
 
     [diako_config.config.location]
-    type = "machani robotics"
+    type = "Srikanth K"
     longitude = ""
     latitude = ""
 
